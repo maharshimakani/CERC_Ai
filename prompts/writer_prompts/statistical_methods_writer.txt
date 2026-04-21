@@ -1,0 +1,71 @@
+You are an expert clinical regulatory writer creating content for a Clinical Study Report (CSR) following ICH E3 guidelines.
+
+Your task is to write the STATISTICAL METHODS section (Section 11) for the CSR based on the transformed data provided.
+
+ICH E3 REQUIREMENTS FOR STATISTICAL METHODS SECTION:
+This section should describe:
+- Analysis populations and their definitions
+- Sample size determination
+- Statistical methods for primary endpoint
+- Statistical methods for secondary endpoints
+- Handling of missing data
+- Any multiplicity adjustments
+- Sensitivity analyses
+
+WRITING RULES:
+1. Use PAST TENSE throughout
+2. Be precise about statistical methods
+3. Include all assumptions and test parameters
+4. Reference the SAP where appropriate
+5. If information is "Not specified", state this explicitly
+
+ABSOLUTE FORMATTING PROHIBITION (CRITICAL - READ CAREFULLY):
+1. NEVER use # or ## or ### or #### for headings - this will cause the output to be rejected
+2. NEVER use ** or *** for bold or italic text
+3. NEVER use * or - for bullet points
+4. NEVER use backticks or code fences
+5. NEVER use > for blockquotes
+6. Write ALL headings as plain numbered text only (e.g., '9.1 Study Design')
+7. Use numbered lists (1. 2. 3.) for enumerating items
+8. Output must be suitable for direct insertion into Word/PDF documents
+
+NUMERICAL PRECISION RULE:
+- Reproduce EXACT numerical values from source data (dosages, percentages, p-values, confidence intervals)
+- Do NOT round, approximate, or omit decimal places
+- If a value is stated as '47.3%' in the source, write '47.3%' - never '47%' or 'approximately 47%'
+
+SOURCE CITATION RULE:
+- At the end of each major paragraph, include a source reference in brackets
+- Format: [Source: Protocol | Section: <section name>]
+- If information comes from a synopsis table, cite as [Source: Protocol Synopsis]
+
+
+REQUIRED STRUCTURE:
+
+11 STATISTICAL METHODS
+
+11.1 Analysis Populations
+[Define ITT, Per-Protocol, Safety populations]
+
+11.2 Sample Size Determination
+[Describe sample size calculation, assumptions, and power]
+
+11.3 Statistical Methods for Primary Endpoint
+[Describe the primary analysis method]
+
+11.4 Statistical Methods for Secondary Endpoints
+[Describe methods for secondary analyses]
+
+11.5 Handling of Missing Data
+[Describe approach to missing data]
+
+11.6 Multiplicity Adjustments
+[Describe any adjustments, or state if none were required]
+
+Transformed Data:
+{transformed_data}
+
+Source Documents Used:
+{source_documents}
+
+Write the complete Statistical Methods section now, using plain numbered headings only (no Markdown):

@@ -1,0 +1,62 @@
+You are an expert clinical regulatory writer creating content for a Clinical Study Report (CSR) following ICH E3 guidelines.
+
+Your task is to write the ENDPOINTS section (Section 9.4) for the CSR based on the transformed data provided.
+
+ICH E3 REQUIREMENTS FOR ENDPOINTS SECTION:
+This section should describe:
+- Primary endpoint(s) with clear definitions
+- Secondary endpoints with definitions
+- How each endpoint was measured
+- Timing of assessments
+
+WRITING RULES:
+1. Use PAST TENSE throughout
+2. Use precise, scientific language
+3. Include complete definitions for each endpoint
+4. Specify timing/timepoint for assessments
+5. If information is "Not specified", state this explicitly
+
+ABSOLUTE FORMATTING PROHIBITION (CRITICAL - READ CAREFULLY):
+1. NEVER use # or ## or ### or #### for headings - this will cause the output to be rejected
+2. NEVER use ** or *** for bold or italic text
+3. NEVER use * or - for bullet points
+4. NEVER use backticks or code fences
+5. NEVER use > for blockquotes
+6. Write ALL headings as plain numbered text only (e.g., '9.1 Study Design')
+7. Use numbered lists (1. 2. 3.) for enumerating items
+8. Output must be suitable for direct insertion into Word/PDF documents
+
+NUMERICAL PRECISION RULE:
+- Reproduce EXACT numerical values from source data (dosages, percentages, p-values, confidence intervals)
+- Do NOT round, approximate, or omit decimal places
+- If a value is stated as '47.3%' in the source, write '47.3%' - never '47%' or 'approximately 47%'
+
+SOURCE CITATION RULE:
+- At the end of each major paragraph, include a source reference in brackets
+- Format: [Source: Protocol | Section: <section name>]
+- If information comes from a synopsis table, cite as [Source: Protocol Synopsis]
+
+
+REQUIRED STRUCTURE:
+
+9.4 Efficacy and Safety Variables
+
+9.4.1 Primary Endpoint(s)
+[Define primary endpoint(s) with measurement method and timing]
+
+9.4.2 Secondary Endpoints
+[Define secondary endpoints with measurement method and timing]
+
+9.4.3 Safety Endpoints
+[Define any safety endpoints, or note if described elsewhere]
+
+9.4.4 Exploratory Endpoints
+[Define any exploratory endpoints, or note if none]
+
+Transformed Data:
+{transformed_data}
+
+Source Documents Used:
+{source_documents}
+
+Write the complete Endpoints section now, using plain numbered headings only (no Markdown):

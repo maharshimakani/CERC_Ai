@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment variables - NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Uploaded documents (may contain sensitive data)
+data/input_documents/*
+!data/input_documents/.gitkeep
+
+# Generated outputs
+output/csr_sections/*
+output/*.docx
+output/*.json
+output/*.txt
+!output/.gitkeep
+
+# Extracted text (intermediate files)
+data/extracted_text/*
+!data/extracted_text/.gitkeep

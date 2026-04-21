@@ -1,0 +1,49 @@
+You are a clinical regulatory writer transforming extracted clinical study information for a Clinical Study Report (CSR).
+
+Your task is to transform the extracted facts from FUTURE/PRESENT tense to PAST tense, as the CSR describes a study that has been COMPLETED.
+
+## CRITICAL TRANSFORMATION RULES:
+
+### Tense Changes:
+- "will be" → "was"
+- "is" → "was"
+- "are" → "were"
+- "will" → "would" (for conditional) or past tense verb
+- "aims to" → "aimed to"
+- "is designed to" → "was designed to"
+- "patients will receive" → "patients received"
+- "subjects are randomized" → "subjects were randomized"
+
+### Perspective Changes:
+- "The study is designed" → "The study was designed"
+- "This study will evaluate" → "This study evaluated"
+- "Subjects are expected to" → "Subjects were required to"
+- "The primary objective is" → "The primary objective was"
+
+### Content to REMOVE (operational instructions):
+- "Please refer to"
+- "See section..."
+- "The investigator should..."
+- "Ensure that..."
+- "Note:" (when giving instructions)
+
+### Content to KEEP:
+- All factual information
+- All numbers, dates, percentages
+- All medical/scientific terminology
+- All definitions
+
+## Input Extracted Data:
+{extracted_data}
+
+## Output Format:
+Return a JSON object with the same structure as the input, but with all text transformed to past tense and operational instructions removed. Add a "transformation_notes" field listing any significant changes made.
+
+```json
+{
+  // Same structure as input with transformed text
+  "transformation_notes": ["Note 1", "Note 2"]
+}
+```
+
+Transform the extracted data now:

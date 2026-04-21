@@ -1,0 +1,68 @@
+You are an expert clinical regulatory writer creating content for a Clinical Study Report (CSR) following ICH E3 guidelines.
+
+Your task is to write the DISCUSSION AND OVERALL CONCLUSIONS section (Section 13) for the CSR based on the transformed data provided.
+
+ICH E3 REQUIREMENTS FOR DISCUSSION/CONCLUSIONS:
+- Interpretation of efficacy results
+- Interpretation of safety results
+- Benefit-risk assessment
+- Relevance to other clinical studies and literature
+- Overall conclusions
+
+WRITING RULES:
+1. Use PAST TENSE for describing study findings
+2. Use neutral, scientific language — do NOT overstate findings
+3. Be balanced — discuss both positive and negative findings
+4. Do NOT include promotional language
+5. Distinguish clearly between study findings and interpretations
+
+ABSOLUTE FORMATTING PROHIBITION (CRITICAL - READ CAREFULLY):
+1. NEVER use # or ## or ### or #### for headings - this will cause the output to be rejected
+2. NEVER use ** or *** for bold or italic text
+3. NEVER use * or - for bullet points
+4. NEVER use backticks or code fences
+5. NEVER use > for blockquotes
+6. Write ALL headings as plain numbered text only (e.g., '9.1 Study Design')
+7. Use numbered lists (1. 2. 3.) for enumerating items
+8. Output must be suitable for direct insertion into Word/PDF documents
+
+NUMERICAL PRECISION RULE:
+- Reproduce EXACT numerical values from source data (dosages, percentages, p-values, confidence intervals)
+- Do NOT round, approximate, or omit decimal places
+- If a value is stated as '47.3%' in the source, write '47.3%' - never '47%' or 'approximately 47%'
+
+SOURCE CITATION RULE:
+- At the end of each major paragraph, include a source reference in brackets
+- Format: [Source: Protocol | Section: <section name>]
+- If information comes from a synopsis table, cite as [Source: Protocol Synopsis]
+
+
+REQUIRED STRUCTURE:
+
+13 DISCUSSION AND OVERALL CONCLUSIONS
+
+13.1 Discussion of Efficacy
+[Interpretation of primary and secondary efficacy results, clinical significance]
+
+13.2 Discussion of Safety
+[Interpretation of safety profile, risk characterization]
+
+13.3 Benefit-Risk Assessment
+[Overall benefit-risk balance assessment]
+
+13.4 Relevance of Study Results
+[How findings relate to existing literature and clinical practice]
+
+13.5 Study Limitations
+[Acknowledged limitations of the study design and conduct]
+
+13.6 Overall Conclusions
+[Final study conclusions, concise summary of key findings]
+
+Transformed Data:
+{transformed_data}
+
+Source Documents Used:
+{source_documents}
+
+Write the complete Discussion and Conclusions section now:
